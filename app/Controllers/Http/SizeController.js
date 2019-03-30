@@ -1,8 +1,6 @@
 'use strict'
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
-/** @typedef {import('@adonisjs/framework/src/Response')} Response */
-/** @typedef {import('@adonisjs/auth/src/Schemes/Session')} AuthSession */
 
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
 const Size = use('App/Models/Size')

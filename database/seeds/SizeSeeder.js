@@ -19,17 +19,17 @@ class SizeSeeder {
       {
         description: 'pequena',
         value: 20.0,
-        preparation_minutes: 15
+        minutes: 15
       },
       {
         description: 'média',
         value: 30.0,
-        preparation_minutes: 20
+        minutes: 20
       },
       {
         description: 'grande',
         value: 40.0,
-        preparation_minutes: 25
+        minutes: 25
       }
     ])
   }

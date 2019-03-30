@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| PizzaFlavorSeeder
+| PersonalizationSeeder
 |--------------------------------------------------------------------------
 |
 | Make use of the Factory instance to seed database with dummy data or
@@ -11,25 +11,28 @@
 */
 
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
-const Flavor = use('App/Models/Flavor')
+const Personalization = use('App/Models/Personalization')
 
-class FlavorSeeder {
+class PersonalizationSeeder {
   async run () {
-    await Flavor.createMany([
+    await Personalization.createMany([
       {
-        description: 'calabresa',
+        description: 'extra bacon',
+        additional_value: 3.0,
         additional_minutes: 0
       },
       {
-        description: 'marguerita',
+        description: 'sem cebola',
+        additional_value: 0,
         additional_minutes: 0
       },
       {
-        description: 'portuguesa',
+        description: 'borda recheada',
+        additional_value: 5.0,
         additional_minutes: 5
       }
     ])
   }
 }
 
-module.exports = FlavorSeeder
+module.exports = PersonalizationSeeder

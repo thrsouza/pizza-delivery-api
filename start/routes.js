@@ -35,6 +35,9 @@ Route.group(() => {
 Route.group(() => {
   Route.resource('sizes', 'SizeController').only(['index'])
   Route.resource('flavors', 'FlavorController').only(['index'])
+  Route.resource('personalizations', 'PersonalizationController').only([
+    'index'
+  ])
 })
   .middleware(['auth'])
   .prefix('api')
