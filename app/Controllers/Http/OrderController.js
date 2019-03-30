@@ -67,16 +67,22 @@ class OrderController {
 
     const personalizations = []
 
-    for (var i = 0; i < data.personalizations.length; i++) {
-      const id = data.personalizations[i]
-      const personalization = await Personalization.findOrFail(id)
+    if (data.personalizations) {
+      if (!Array.isArray(data.personalizations)) {
+        return response.status(500).send()
+      }
 
-      personalizations.push({
-        description: personalization.description,
-        value: personalization.additional_value
-      })
-      total_value += personalization.additional_value
-      total_minutes += personalization.additional_minutes
+      for (var i = 0; i < data.personalizations.length; i++) {
+        const id = data.personalizations[i]
+        const personalization = await Personalization.findOrFail(id)
+
+        personalizations.push({
+          description: personalization.description,
+          value: personalization.additional_value
+        })
+        total_value += personalization.additional_value
+        total_minutes += personalization.additional_minutes
+      }
     }
 
     const transaction = await Database.beginTransaction()

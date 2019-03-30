@@ -10,8 +10,7 @@ class StoreOrder {
   get rules () {
     return {
       size_id: 'required',
-      flavor_id: 'required',
-      personalizations: 'required'
+      flavor_id: 'required'
     }
   }
 
