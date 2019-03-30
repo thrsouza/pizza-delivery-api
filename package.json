@@ -1,6 +1,6 @@
 {
   "name": "pizza-delivery-api",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "adonis-version": "4.1.0",
   "description": "Pizza Delivery API for UDS challenge",
   "main": "server.js",
@@ -16,8 +16,8 @@
     "run:migration-down": "adonis migration:rollback",
     "run:seeders": "adonis seed --files='FlavorSeeder.js, SizeSeeder.js, PersonalizationSeeder.js'",
     "start": "node server.js",
-    "start:dev": "adonis server --dev",
-    "test": "node ace test"
+    "start:dev": "adonis serve --dev",
+    "start:test": "node ace test"
   },
   "keywords": [
     "adonisjs",
