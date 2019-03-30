@@ -46,7 +46,10 @@ class ExceptionHandler extends BaseExceptionHandler {
    * @return {void}
    */
   async report (error, { request }) {
-    if (error.name !== 'ValidationException') {
+    if (
+      Env.get('NODE_ENV') === 'development' &&
+      error.name !== 'ValidationException'
+    ) {
       console.log(error)
     }
   }
