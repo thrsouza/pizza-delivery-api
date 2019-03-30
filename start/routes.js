@@ -31,3 +31,10 @@ Route.group(() => {
       ])
     )
 }).prefix('api')
+
+Route.group(() => {
+  Route.resource('sizes', 'SizeController').only(['index'])
+  Route.resource('flavors', 'FlavorController').only(['index'])
+})
+  .middleware(['auth'])
+  .prefix('api')

@@ -46,7 +46,9 @@ class ExceptionHandler extends BaseExceptionHandler {
    * @return {void}
    */
   async report (error, { request }) {
-    console.log(error)
+    if (error.name !== 'ValidationException') {
+      console.log(error)
+    }
   }
 }
 

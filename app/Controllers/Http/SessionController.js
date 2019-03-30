@@ -6,7 +6,7 @@
 class SessionController {
   /**
    * Create/save a new token.
-   * POST token
+   * POST api/sessions
    *
    * @param {object} ctx
    * @param {Request} ctx.request

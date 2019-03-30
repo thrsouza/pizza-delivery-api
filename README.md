@@ -1,4 +1,4 @@
-# Delivery API - UDS Challenge
+# Pizza Delivery API - UDS Challenge
 
 1. Bodyparser
 2. Authentication

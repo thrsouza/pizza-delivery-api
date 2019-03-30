@@ -1,8 +1,8 @@
 {
-  "name": "delivery-api",
+  "name": "pizza-delivery-api",
   "version": "0.0.1",
   "adonis-version": "4.1.0",
-  "description": "Delivery api for UDS challenge",
+  "description": "Pizza Delivery API for UDS challenge",
   "main": "server.js",
   "author": {
     "name": "Thiago de Souza",
@@ -11,7 +11,10 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node ace test"
+    "test": "node ace test",
+    "migration": "adonis migration:run",
+    "migration:down": "adonis migration:rollback",
+    "seeders": "adonis seed --files=''"
   },
   "keywords": [
     "adonisjs",

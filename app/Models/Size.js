@@ -3,6 +3,6 @@
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
 const Model = use('Model')
 
-class Token extends Model {}
+class Size extends Model {}
 
-module.exports = Token
+module.exports = Size

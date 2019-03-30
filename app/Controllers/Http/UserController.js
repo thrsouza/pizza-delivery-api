@@ -13,7 +13,7 @@ const Hash = use('Hash')
 class UserController {
   /**
    * Create/save a new user.
-   * POST users
+   * POST api/users
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -29,7 +29,7 @@ class UserController {
 
   /**
    * Update user details.
-   * PUT or PATCH users/:id
+   * PUT or PATCH api/users/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
