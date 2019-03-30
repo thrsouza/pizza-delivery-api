@@ -38,6 +38,10 @@ Route.group(() => {
   Route.resource('personalizations', 'PersonalizationController').only([
     'index'
   ])
+
+  Route.resource('orders', 'OrderController')
+    .only(['index', 'store', 'show'])
+    .validator(new Map([[['orders.store'], ['StoreOrder']]]))
 })
   .middleware(['auth'])
   .prefix('api')

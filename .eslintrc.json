@@ -2,5 +2,8 @@
   "extends": "standard",
   "globals": {
     "use": true
+  },
+  "rules": {
+    "camelcase": 0
   }
 }
