@@ -1,0 +1,50 @@
+{
+  "name": "delivery-api",
+  "version": "0.0.1",
+  "adonis-version": "4.1.0",
+  "description": "Delivery api for UDS challenge",
+  "main": "server.js",
+  "author": {
+    "name": "Thiago de Souza",
+    "email": "email@thiagodesouza.com.br",
+    "url": "https://www.thiagodesouza.com.br"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ace test"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app",
+    "delivery",
+    "delivery-api",
+    "uds"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/antl": "^2.0.7",
+    "@adonisjs/auth": "^3.0.7",
+    "@adonisjs/bodyparser": "^2.0.5",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/validator": "^5.0.6",
+    "pg": "^7.9.0",
+    "youch": "^2.0.10"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "autoload": {
+    "App": "./app"
+  }
+}
