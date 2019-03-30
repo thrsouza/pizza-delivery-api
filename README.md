@@ -6,6 +6,12 @@
 4. Migrations and seeds
 5. Functional tests
 
+### Install dependencies
+
+```shell
+$ yarn || npm install
+```
+
 ### Migrations
 
 Run the following command to run startup migrations and seeders.
