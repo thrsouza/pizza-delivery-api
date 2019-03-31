@@ -12,9 +12,9 @@
   "scripts": {
     "db:configure": "yarn run:migration && yarn run:seeders",
     "db:rollback": "yarn run:migration-down",
-    "run:migration": "adonis migration:run",
-    "run:migration-down": "adonis migration:rollback",
-    "run:seeders": "adonis seed --files='FlavorSeeder.js, SizeSeeder.js, PersonalizationSeeder.js'",
+    "run:migration": "node ace migration:run",
+    "run:migration-down": "node ace migration:rollback",
+    "run:seeders": "node ace seed --files='FlavorSeeder.js, SizeSeeder.js, PersonalizationSeeder.js'",
     "start": "node server.js",
     "start:dev": "adonis serve --dev",
     "start:test": "node ace test"
