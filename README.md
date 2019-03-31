@@ -41,36 +41,36 @@ Latest result:
 yarn run v1.15.2
 $ node ace test
 info: serving app on http://127.0.0.1:3333
-Database migrated successfully in 304 ms
-Seeded database in 170 ms
+Database migrated successfully in 295 ms
+Seeded database in 144 ms
 
   Pizza Flavor
-    ✓ should be available flavor options (297ms)
+    ✓ should be available flavor options (301ms)
 
   Pizza Order
-    ✓ should be return orders (174ms)
+    ✓ should be return orders (181ms)
     ✓ should be create order with pizza personalizations (187ms)
-    ✓ should be create order without pizza personalizations (204ms)
+    ✓ should be create order without pizza personalizations (185ms)
 
   Pizza Personalization
-    ✓ should be available personalization options (231ms)
+    ✓ should be available personalization options (193ms)
 
   User Session
-    ✓ shold be able to authenticate with valid credentials (212ms)
-    ✓ shold not be able to authenticate with invalid credentials (223ms)
-    ✓ should be able to access private routes when authenticated (229ms)
-    ✓ should not be able to access private routes when not authenticated (9ms)
+    ✓ should be able to authenticate with valid credentials (179ms)
+    ✓ should not be able to authenticate with invalid credentials (178ms)
+    ✓ should be able to access private routes when authenticated (192ms)
+    ✓ should not be able to access private routes when not authenticated (7ms)
 
   Pizza Size
-    ✓ should be available size options (221ms)
+    ✓ should be available size options (185ms)
 
    PASSED
 
   total       : 10
   passed      : 10
   time        : 2s
-Reset completed in 225 ms
-Done in 3.49s.
+Reset completed in 208 ms
+Done in 3.23s.
 ```
 
 <br/>

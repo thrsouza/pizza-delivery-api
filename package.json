@@ -1,6 +1,6 @@
 {
   "name": "pizza-delivery-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "adonis-version": "4.1.0",
   "description": "Pizza Delivery API for UDS challenge",
   "main": "server.js",

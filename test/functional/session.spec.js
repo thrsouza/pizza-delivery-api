@@ -6,7 +6,7 @@ const Factory = use('Factory')
 trait('Test/ApiClient')
 trait('Auth/Client')
 
-test('shold be able to authenticate with valid credentials', async ({
+test('should be able to authenticate with valid credentials', async ({
   assert,
   client
 }) => {
@@ -24,7 +24,7 @@ test('shold be able to authenticate with valid credentials', async ({
   assert.isTrue(!!response.body.token)
 })
 
-test('shold not be able to authenticate with invalid credentials', async ({
+test('should not be able to authenticate with invalid credentials', async ({
   assert,
   client
 }) => {
